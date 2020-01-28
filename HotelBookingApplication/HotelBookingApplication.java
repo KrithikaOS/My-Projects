@@ -29,11 +29,9 @@ public class HotelBookingApplication {
 				return "Sorry! you dont have sufficient amount to book any hotel";
 			}
 			else if (totalAmount1 < totalAmount2) {
-					return "Hotel Booked for " + days + " days in " + rating + " star Hotel "
-							+ ((AccordHotel) hotelList.get(0)).hotelName + " for the cost of " + totalAmount1;
+				return String.format("Hotel Booked for %d days in %d star Hotel %s for the cost of %.2f",days,rating ,((AccordHotel) hotelList.get(0)).hotelName ,totalAmount1);
 				} else {
-					return "Hotel Booked for " + days + "days in " + rating + "star Hotel "
-							+ ((FortuneHotel) hotelList.get(1)).hotelName + " for the cost of " + totalAmount2;
+					return String.format("Hotel Booked for %d days in %d star Hotel %s for the cost of %.2f",days,rating ,((FortuneHotel) hotelList.get(1)).hotelName ,totalAmount2);
 				}
 		
 		case 3:
@@ -45,13 +43,11 @@ public class HotelBookingApplication {
 
 			else {
 				if (totalAmount3 < totalAmount4) {
-					return "Hotel Booked for " + days + " days in " + rating + " star Hotel "
-							+ ((RainTreeHotel) hotelList.get(2)).hotelName + " for the cost of " + totalAmount3;
+					return String.format("Hotel Booked for %d days in %d star Hotel %s for the cost of %.2f",days,rating ,((RainTreeHotel) hotelList.get(2)).hotelName ,totalAmount3);
 				}
 
 				else {
-					return "Hotel Booked for " + days + " days in " + rating + " star Hotel "
-							+ ((RaddissonHotel) hotelList.get(3)).hotelName + " for the cost of " + totalAmount4;
+					return String.format("Hotel Booked for %d days in %d star Hotel %s for the cost of %.2f",days,rating ,((RaddissonHotel) hotelList.get(3)).hotelName ,totalAmount4);
 				}
 			}
 			
@@ -65,13 +61,11 @@ public class HotelBookingApplication {
 
 			else {
 				if (totalAmount5 < totalAmount6) {
-					return "Hotel Booked for " + days + " days in " + rating + " star Hotel "
-							+ ((HyattHotel) hotelList.get(4)).hotelName + " for the cost of " + totalAmount5;
+					return String.format("Hotel Booked for %d days in %d star Hotel %s for the cost of %.2f",days,rating ,((HyattHotel) hotelList.get(4)).hotelName ,totalAmount5);
 				}
 
 				else {
-					return "Hotel Booked for " + days + " days in " + rating + " star Hotel "
-							+ ((TheParkHotel) hotelList.get(5)).hotelName + " for the cost of " + totalAmount6;
+					return String.format("Hotel Booked for %d days in %d star Hotel %s for the cost of %.2f",days,rating ,((TheParkHotel) hotelList.get(5)).hotelName ,totalAmount6);
 				}
 			}
 		
