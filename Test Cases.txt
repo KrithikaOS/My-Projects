@@ -1,0 +1,20 @@
+Test case 1:
+300
+5
+3
+Test case 2:
+100
+5
+3
+Test case 3:
+dsdsds
+2
+3
+Test case 4:
+400
+35
+1
+Test case 5:
+200
+29
+4
