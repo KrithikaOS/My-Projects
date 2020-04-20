@@ -1,4 +1,10 @@
 
+/*
+Hotel - id, name, cost per day, discount(logic), star
+Discount - id, waiverday, percentDiscount
+Customer - name, Preferences, query- method(preferences)
+Preferences - star, cost per day,  
+*/
 public class HyattHotel extends HotelDetails{
 	final String hotelName = "Hotel Hyatt";
 	private final Double amount = 82d;
@@ -6,6 +12,7 @@ public class HyattHotel extends HotelDetails{
 	private final float waiver = 0.12f;
 	double totalAmount;
 
+   
 	@Override
 	double calculateCost(double money, int days) {
 		if (money < amount) {
