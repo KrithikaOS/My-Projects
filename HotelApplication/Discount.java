@@ -2,7 +2,15 @@
 public class Discount {
 	private String id;
 	private int waiverDays;
-	private int discountPercent;
+	private float discountPercent;
+	
+	
+	public Discount(int waiverDays, float discountPercent) {
+		super();
+		this.waiverDays = waiverDays;
+		this.discountPercent = discountPercent;
+	}
+	
 	public String getId() {
 		return id;
 	}
@@ -15,12 +23,13 @@ public class Discount {
 	public void setWaiverDays(int waiverDays) {
 		this.waiverDays = waiverDays;
 	}
-	public int getDiscountPercent() {
+	public float getDiscountPercent() {
 		return discountPercent;
 	}
-	public void setDiscountPercent(int discountPercent) {
+	public void setDiscountPercent(float discountPercent) {
 		this.discountPercent = discountPercent;
 	}
 	
 
+	
 }
