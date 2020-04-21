@@ -33,7 +33,6 @@ class DiscountComparator implements Comparator<Discount>{
 	public Hotel getHotels(List<Hotel> hotels, Preference pref) {
 		int costPref = pref.getTotalBudget()/pref.getDays(); // perdaycost requirement 
     	int ratingPref = pref.getRatingPreference();
-    	List<Hotel> filtered = new ArrayList<>();
     	List<Hotel> result = new ArrayList<>();
     	double minCostSoFar = Double.MAX_VALUE;
     	for(Hotel hotel: hotels)
